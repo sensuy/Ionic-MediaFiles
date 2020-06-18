@@ -45,7 +45,6 @@ export class HomePage implements OnInit {
     this.file.listDir(this.file.dataDirectory, 'appMediaFiles').then(
       resp => {
         console.log('resp loadFiles: ', resp);
-
       },
       err => console.log('error loading files: ', err)
     );
